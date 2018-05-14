@@ -1,14 +1,13 @@
 package com.tiziana.service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.tiziana.domain.Topic;
-import com.tiziana.domain.TopicRepository;
+import com.tiziana.beans.Topic;
+import com.tiziana.dao.TopicRepository;
 
 @Service
 public class TopicService {

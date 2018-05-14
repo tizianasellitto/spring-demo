@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.tiziana.domain.Course;
-import com.tiziana.domain.CourseRepository;
+import com.tiziana.beans.Course;
+import com.tiziana.dao.CourseRepository;
 
 @Service
 public class CourseService {

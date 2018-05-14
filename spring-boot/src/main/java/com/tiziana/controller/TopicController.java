@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tiziana.domain.Topic;
+import com.tiziana.beans.Topic;
 import com.tiziana.service.TopicService;
 
 @RestController
