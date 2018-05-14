@@ -1,0 +1,10 @@
+insert into exchange_value(id,currency_from,currency_to, exchange_rate, inverse_exchange_rate)
+values(10004, 'EUR', 'USD', 1.193142, 0.838123);
+insert into exchange_value(id,currency_from,currency_to, exchange_rate, inverse_exchange_rate)
+values(10004, 'EUR', 'GBP', 0.879756, 1.136679);
+insert into exchange_value(id,currency_from,currency_to, exchange_rate, inverse_exchange_rate)
+values(10004, 'EUR', 'GBP', 0.879756, 1.136679);
+insert into exchange_value(id,currency_from,currency_to, exchange_rate, inverse_exchange_rate)
+values(10004, 'EUR', 'AUD', 1.585438, 0.630741);
+insert into exchange_value(id,currency_from,currency_to, exchange_rate, inverse_exchange_rate)
+values(10004, 'EUR', 'CAD', 1.527376, 0.654718);
