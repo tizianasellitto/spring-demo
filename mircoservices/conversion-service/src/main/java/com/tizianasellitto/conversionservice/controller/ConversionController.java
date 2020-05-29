@@ -21,6 +21,11 @@ public class ConversionController {
 	@Autowired
 	private RestTemplate restTemplate;
 
+	@RequestMapping("/")
+	public String sayHi() {
+		return "Conversion Exchange Consumer calling Currency microservises. To use hit https://pacific-eyrie-10660.herokuapp.com/conversion-exchange/100/from/EUR/to/CAD";
+	}
+	
 	@RequestMapping("/conversion-exchange/{amount}/from/{from}/to/{to}")
 	public String getCurrencyExchangeUrl(@PathVariable BigDecimal amount, @PathVariable String from,
 			@PathVariable String to) throws JSONException {

@@ -14,9 +14,9 @@ public class CurrencyController {
 	@Autowired
 	private ExchangeValueRepository repository;
 
-	@RequestMapping("/hello")
+	@RequestMapping("/")
 	public String sayHi() {
-		return "Hi";
+		return "Currency Exchange Service Producer";
 	}
 
 	@RequestMapping("/currency-exchange/from/{from}/to/{to}")

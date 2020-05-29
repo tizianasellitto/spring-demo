@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: currency-service
+  cloud:
+    discovery:
+      enabled: true 
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+    
+server:
+  port: 8098    #default port where the service will be started
+ 
+eureka:         #tells about the Eureka server details and its refresh time
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:5000}/eureka/
+  instance:
+    non-secure-port: ${NON_SECURE_PORT:${server.port}}
+    hostname: ${DOMAIN_NAME:localhost}
+
+logging:
+  level:
+    com.tizianasellitto: DEBUG
+
+    
